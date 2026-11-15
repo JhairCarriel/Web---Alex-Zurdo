@@ -1,0 +1,256 @@
+/* ===== COLORES (negro, rojo vino y dorado) ===== */
+:root {
+  --fondo: #140507;        /* negro rojizo */
+  --vino: #5C0F1A;         /* rojo oscuro */
+  --vino-claro: #7B1626;
+  --tarjeta: #2A0A10;
+  --dorado: #E0B45C;
+  --crema: #F7EDE2;
+}
+
+/* ===== GENERAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--fondo);
+  color: var(--crema);
+  scroll-behavior: smooth;
+}
+h1, h2, h3 { font-family: Georgia, serif; }
+
+/* ===== ENCABEZADO ===== */
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px 20px;
+  background: var(--vino);
+  border-bottom: 3px solid var(--dorado);
+}
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0px solid var(--dorado);
+  background: var(--vino-claro);
+}
+.titulo h1 { margin: 0; font-size: 46px; color: var(--dorado); letter-spacing: 3px; text-transform: uppercase; }
+.titulo p { margin: 5px 0 0 0; }
+
+/* ===== MENÚ ===== */
+.menu { background: #000000; text-align: center; padding: 14px; }
+.menu a {
+  color: var(--crema);
+  text-decoration: none;
+  margin: 0 14px;
+  padding: 6px 4px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+.menu a:hover { color: var(--dorado); border-bottom: 2px solid var(--dorado); }
+
+/* ===== PORTADA ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+  padding: 35px;
+  background: var(--vino);
+  border-radius: 15px;
+  border: 1px solid var(--dorado);
+}
+.hero-texto { width: 55%; line-height: 1.6; }
+.etiqueta { color: var(--dorado); letter-spacing: 3px; font-size: 13px; font-weight: bold; }
+.hero-texto h2 { font-size: 36px; margin: 5px 0 10px 0; }
+.hero-foto { width: 45%; }
+.hero-foto img {
+  width: 100%;
+  min-height: 250px;
+  border-radius: 12px;
+  border: 3px solid var(--dorado);
+  background: var(--vino-claro);
+  display: block;
+}
+
+/* ===== SECCIONES ===== */
+.seccion {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #1F060A;
+  border-radius: 15px;
+  border-top: 4px solid var(--vino-claro);
+}
+.seccion h2 { margin-top: 0; text-align: center; color: var(--dorado); font-size: 30px; }
+
+/* ===== ARTISTA ===== */
+.artista-contenido { display: flex; gap: 25px; }
+.artista-foto { width: 40%; }
+.artista-foto img {
+  width: 100%;
+  min-height: 250px;
+  border-radius: 12px;
+  border: 3px solid var(--dorado);
+  background: var(--vino-claro);
+}
+.artista-datos { width: 60%; line-height: 1.6; }
+.nombre { font-size: 20px; font-weight: bold; color: var(--dorado); }
+.datos { display: flex; gap: 10px; margin-top: 15px; }
+.dato {
+  background: var(--vino);
+  padding: 12px;
+  border-radius: 10px;
+  width: 33%;
+  text-align: center;
+  font-weight: bold;
+}
+.dato span { display: block; font-size: 12px; color: var(--dorado); font-weight: normal; margin-bottom: 4px; }
+
+/* ===== GALERÍA ===== */
+.galeria { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+.foto {
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid var(--dorado);
+  background: var(--vino-claro);
+
+  }
+.foto img { width: 100%; height: 100%; object-fit: cover; display: block; transition: 0.3s; }
+.foto:hover { border-color: var(--crema); }
+.foto:hover img { opacity: 0.8; }
+
+/* ===== VIDEO ===== */
+.video-caja { text-align: center; }
+.video-caja video { width: 90%; border-radius: 12px; border: 2px solid var(--dorado); background: #000; }
+
+/* ===== CANCIONES ===== */
+.canciones { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+.tarjeta {
+  background: var(--tarjeta);
+  border: 1px solid var(--vino-claro);
+  border-top: 4px solid var(--dorado);
+  border-radius: 12px;
+  padding: 18px;
+  width: 280px;
+  text-align: center;
+  transition: 0.3s;
+}
+.tarjeta:hover { border-color: var(--dorado); }
+.tarjeta h3 { margin-top: 0; color: var(--dorado); }
+.tarjeta audio { width: 100%; margin-bottom: 10px; }
+
+.boton {
+  display: inline-block;
+  background: var(--dorado);
+  color: #140507;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 4px;
+  transition: 0.3s;
+}
+.boton:hover { background: var(--crema); }
+.boton-claro { background: transparent; color: var(--dorado); border: 2px solid var(--dorado); padding: 6px 14px; }
+.boton-claro:hover { background: var(--dorado); color: #140507; }
+
+/* ===== LETRAS ===== */
+.letra {
+  background: var(--tarjeta);
+  border-left: 5px solid var(--dorado);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.letra h3 { margin-top: 0; color: var(--dorado); }
+.letra audio { width: 100%; }
+.texto-letra {
+  background: #000000;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  line-height: 1.8;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.volver { color: var(--dorado); text-decoration: none; font-weight: bold; }
+.volver:hover { text-decoration: underline; }
+
+/* ===== CONCIERTOS ===== */
+.concierto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--tarjeta);
+  border-left: 5px solid var(--dorado);
+  border-radius: 10px;
+  padding: 18px;
+}
+.fecha {
+  background: var(--vino);
+  border-radius: 10px;
+  padding: 10px 16px;
+  text-align: center;
+}
+.fecha span { display: block; font-size: 12px; color: var(--dorado); }
+.fecha strong { font-size: 28px; }
+.concierto-info { flex: 1; }
+.concierto-info h3 { margin: 0 0 5px 0; color: var(--dorado); }
+.concierto-info p { margin: 0; }
+.aviso { font-size: 13px; text-align: center; margin-bottom: 0; }
+
+/* ===== PIE DE PÁGINA ===== */
+.pie {
+  background: #000000;
+  border-top: 3px solid var(--dorado);
+  text-align: center;
+  padding: 25px 15px;
+  line-height: 1.6;
+}
+.redes a { color: var(--dorado); margin: 0 15px; text-decoration: none; font-weight: bold; }
+.redes a:hover { text-decoration: underline; }
+.copy { font-size: 13px; margin-top: 15px; }
+
+/* ===== BOTÓN SUBIR ===== */
+.subir {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--dorado);
+  color: #140507;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ===== RESPONSIVE (celulares) ===== */
+@media (max-width: 700px) {
+  .encabezado { flex-direction: column; text-align: center; }
+  .titulo h1 { font-size: 32px; }
+  .menu a { display: inline-block; margin: 4px 8px; }
+  .hero { flex-direction: column; margin: 20px 10px 0 10px; padding: 20px; }
+  .hero-texto, .hero-foto { width: 100%; }
+  .hero-texto h2 { font-size: 28px; }
+  .artista-contenido { flex-direction: column; }
+  .artista-foto, .artista-datos { width: 100%; }
+  .datos { flex-direction: column; }
+  .dato { width: auto; }
+  .foto { width: 100%; }
+  .video-caja video { width: 100%; }
+  .tarjeta { width: 100%; }
+  .concierto { flex-direction: column; text-align: center; }
+  .foto { height: 200px; }
+  .seccion { margin: 20px 10px; }
+}
