@@ -1,14 +1,13 @@
-/* ===== COLORES (negro, rojo vino y dorado) ===== */
+
 :root {
-  --fondo: #140507;        /* negro rojizo */
-  --vino: #5C0F1A;         /* rojo oscuro */
+  --fondo: #140507;        
+  --vino: #5C0F1A;         
   --vino-claro: #7B1626;
   --tarjeta: #2A0A10;
   --dorado: #E0B45C;
   --crema: #F7EDE2;
 }
 
-/* ===== GENERAL ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -18,7 +17,6 @@ body {
 }
 h1, h2, h3 { font-family: Georgia, serif; }
 
-/* ===== ENCABEZADO ===== */
 .encabezado {
   display: flex;
   align-items: center;
@@ -39,7 +37,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
 .titulo h1 { margin: 0; font-size: 46px; color: var(--dorado); letter-spacing: 3px; text-transform: uppercase; }
 .titulo p { margin: 5px 0 0 0; }
 
-/* ===== MENÚ ===== */
 .menu { background: #000000; text-align: center; padding: 14px; }
 .menu a {
   color: var(--crema);
@@ -51,7 +48,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
 }
 .menu a:hover { color: var(--dorado); border-bottom: 2px solid var(--dorado); }
 
-/* ===== PORTADA ===== */
 .hero {
   display: flex;
   align-items: center;
@@ -76,7 +72,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
   display: block;
 }
 
-/* ===== SECCIONES ===== */
 .seccion {
   max-width: 1000px;
   margin: 30px auto;
@@ -87,7 +82,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
 }
 .seccion h2 { margin-top: 0; text-align: center; color: var(--dorado); font-size: 30px; }
 
-/* ===== ARTISTA ===== */
 .artista-contenido { display: flex; gap: 25px; }
 .artista-foto { width: 40%; }
 .artista-foto img {
@@ -110,7 +104,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
 }
 .dato span { display: block; font-size: 12px; color: var(--dorado); font-weight: normal; margin-bottom: 4px; }
 
-/* ===== GALERÍA ===== */
 .galeria { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
 .foto {
   width: 400px;
@@ -125,11 +118,9 @@ h1, h2, h3 { font-family: Georgia, serif; }
 .foto:hover { border-color: var(--crema); }
 .foto:hover img { opacity: 0.8; }
 
-/* ===== VIDEO ===== */
 .video-caja { text-align: center; }
 .video-caja video { width: 90%; border-radius: 12px; border: 2px solid var(--dorado); background: #000; }
 
-/* ===== CANCIONES ===== */
 .canciones { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
 .tarjeta {
   background: var(--tarjeta);
@@ -161,7 +152,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
 .boton-claro { background: transparent; color: var(--dorado); border: 2px solid var(--dorado); padding: 6px 14px; }
 .boton-claro:hover { background: var(--dorado); color: #140507; }
 
-/* ===== LETRAS ===== */
 .letra {
   background: var(--tarjeta);
   border-left: 5px solid var(--dorado);
@@ -183,7 +173,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
 .volver { color: var(--dorado); text-decoration: none; font-weight: bold; }
 .volver:hover { text-decoration: underline; }
 
-/* ===== CONCIERTOS ===== */
 .concierto {
   display: flex;
   align-items: center;
@@ -206,7 +195,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
 .concierto-info p { margin: 0; }
 .aviso { font-size: 13px; text-align: center; margin-bottom: 0; }
 
-/* ===== PIE DE PÁGINA ===== */
 .pie {
   background: #000000;
   border-top: 3px solid var(--dorado);
@@ -218,7 +206,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
 .redes a:hover { text-decoration: underline; }
 .copy { font-size: 13px; margin-top: 15px; }
 
-/* ===== BOTÓN SUBIR ===== */
 .subir {
   position: fixed;
   right: 20px;
@@ -235,7 +222,6 @@ h1, h2, h3 { font-family: Georgia, serif; }
   font-weight: bold;
 }
 
-/* ===== RESPONSIVE (celulares) ===== */
 @media (max-width: 700px) {
   .encabezado { flex-direction: column; text-align: center; }
   .titulo h1 { font-size: 32px; }
